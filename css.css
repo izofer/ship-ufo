@@ -1,0 +1,241 @@
+body{
+	background-color: black;
+}
+.container{
+	border:0px dotted red;
+	
+	display: grid;
+	height: 97vh;
+	grid-template:30% 60% / 100%;
+}
+
+.cielo{
+	background: rgba(179,220,237,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(79,194,231,1) 0%, rgba(46,185,229,0.64) 83%, rgba(41,184,229,0.55) 95%, rgba(188,224,238,0.51) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(179,220,237,1)), color-stop(0%, rgba(79,194,231,1)), color-stop(83%, rgba(46,185,229,0.64)), color-stop(95%, rgba(41,184,229,0.55)), color-stop(100%, rgba(188,224,238,0.51)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(79,194,231,1) 0%, rgba(46,185,229,0.64) 83%, rgba(41,184,229,0.55) 95%, rgba(188,224,238,0.51) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(79,194,231,1) 0%, rgba(46,185,229,0.64) 83%, rgba(41,184,229,0.55) 95%, rgba(188,224,238,0.51) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(179,220,237,1) 0%, rgba(79,194,231,1) 0%, rgba(46,185,229,0.64) 83%, rgba(41,184,229,0.55) 95%, rgba(188,224,238,0.51) 100%);
+	background: radial-gradient(ellipse at center, rgba(179,220,237,1) 0%, rgba(79,194,231,1) 0%, rgba(46,185,229,0.64) 83%, rgba(41,184,229,0.55) 95%, rgba(188,224,238,0.51) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );
+}
+
+.ufo{
+	position: absolute;
+
+	animation-name:ufo;
+	animation-duration: 3s;
+	animation-iteration-count:1;
+	animation-timing-function:ease-out;
+    animation-fill-mode:forwards;
+
+    z-index: 2;
+}
+
+.ufo img{
+	animation-name:rotate;
+	animation-duration: 3s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	animation-direction: alternate;
+}
+
+.cielo{
+	display: flex;
+	list-style: none;
+	flex-wrap: nowrap;
+	align-items: baseline;
+}
+
+.campo{
+	display: grid;
+
+	grid-template-rows:60% 56%;
+}
+
+.montaña{
+	background: rgba(241,231,103,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(241,231,103,1) 0%, rgba(251,192,76,1) 58%, rgba(254,182,69,1) 73%, rgba(254,182,69,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(241,231,103,1)), color-stop(58%, rgba(251,192,76,1)), color-stop(73%, rgba(254,182,69,1)), color-stop(100%, rgba(254,182,69,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(241,231,103,1) 0%, rgba(251,192,76,1) 58%, rgba(254,182,69,1) 73%, rgba(254,182,69,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(241,231,103,1) 0%, rgba(251,192,76,1) 58%, rgba(254,182,69,1) 73%, rgba(254,182,69,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(241,231,103,1) 0%, rgba(251,192,76,1) 58%, rgba(254,182,69,1) 73%, rgba(254,182,69,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(241,231,103,1) 0%, rgba(251,192,76,1) 58%, rgba(254,182,69,1) 73%, rgba(254,182,69,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 );
+}
+
+.montaña{
+	display: flex;
+	list-style: none;
+	flex-wrap: nowrap;
+	align-items: baseline;
+}
+
+.suelo{
+	background: rgba(241,231,103,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(241,231,103,1) 0%, rgba(251,192,76,1) 58%, rgba(254,182,69,1) 73%, rgba(254,182,69,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(241,231,103,1)), color-stop(58%, rgba(251,192,76,1)), color-stop(73%, rgba(254,182,69,1)), color-stop(100%, rgba(254,182,69,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(241,231,103,1) 0%, rgba(251,192,76,1) 58%, rgba(254,182,69,1) 73%, rgba(254,182,69,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(241,231,103,1) 0%, rgba(251,192,76,1) 58%, rgba(254,182,69,1) 73%, rgba(254,182,69,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(241,231,103,1) 0%, rgba(251,192,76,1) 58%, rgba(254,182,69,1) 73%, rgba(254,182,69,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(241,231,103,1) 0%, rgba(251,192,76,1) 58%, rgba(254,182,69,1) 73%, rgba(254,182,69,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 );
+}
+
+.suelo{
+	border:0px solid black;
+	display: flex;
+	position: relative;
+
+	align-items: center;
+	justify-content:flex-end;
+}
+
+.suelo li{
+	list-style:none;
+}
+
+.suelo .obeja{
+	border:0px solid red;
+	background-image: url(https://i.pinimg.com/originals/8c/9c/03/8c9c03d9b6d18b29e4280d2967eb8428.png);
+	background-repeat: no-repeat;
+	height: 64px;
+    width: 70px;
+    background-position: -271px 0px;
+    position: relative;
+    right: 50px;
+
+    animation-name:shipWalk, moving;
+    animation-duration: 0.5s, 6s;
+    animation-iteration-count: 12, 1;
+    animation-timing-function: steps(1), linear;
+    animation-fill-mode:forwards;
+}
+
+.luz{
+	display: none;
+}
+
+
+@keyframes shipWalk{
+	from{
+		 background-position: -271px 0px;
+	}
+	30%{
+		background-position: -200px 0px;
+	}
+
+	60%{
+		 background-position: -125px 0px;
+	}
+
+	to{
+		background-position: -271px 0px;
+	}
+
+}
+
+@keyframes moving{
+	from{
+		 right: 0px;
+	}
+	to{
+		right: 50%;
+	}
+}
+
+@keyframes ufo{
+	from{
+		opacity: 0;
+		left: 0px;
+		transform: scale(0)
+	}
+	to{
+		opacity: .9;
+		left:60%;
+		transform: scale(.8,1)
+	}
+}
+
+@keyframes rotate{
+	from{
+		transform: rotate(-25deg);
+	}
+	to{
+		transform: rotate(25deg);
+	}
+}
+
+@keyframes otherDirections{
+	from{
+		left: 60%;
+		transform: translate(0,0);
+	}
+	to{
+		left: 60%;
+		transform: translate(-50%,280px);
+	}
+}
+
+@keyframes shipHop{
+	from{
+		right: 50%;
+		background-position: -271px 0px;
+	}
+	to{
+		right: 50%;
+		background-position: 8px -8px;
+	}
+}
+
+@keyframes hop{
+	from{
+		transform:translateY(0);
+	}
+	to{
+		transform:translateY(-10px);
+	}
+}
+
+@keyframes raptar{
+	from{
+		height: 0
+	}
+	to{
+		height: 241
+	}
+}
+
+@keyframes elevar{
+	from{
+		right: 50%;
+		transform: translateY(0) scale(1,1);
+	}
+	to{
+		right: 50%;
+		transform:translateY(-140px) scale(0,0);
+
+	}
+}
+
+@keyframes goOut{
+	from{
+		left: 60%;
+		transform: translate(-50%,280px);
+		opacity: 1;
+	}
+	to{
+		left: 1px;
+		transform: translate(-10px,-20px);
+		opacity: 0;
+	}
+}
+
+@keyframes elevarOut{
+	from{
+		opacity: 0.3;
+	}
+	to{
+		opacity: 0;
+	}
+}
